@@ -12,5 +12,16 @@ jobs:
     steps: 
     - name: Print a greeting 
       run: | 
-        echo Hello there!
         ls
+        echo Hello there!
+        
+    - name: Setup Go environment
+      uses: actions/setup-go@v2.1.3
+      with:
+        # The Go version to download (if necessary) and use. Supports semver spec and ranges.
+         go-version: 1.13.7
+    - name: Check Go Version
+      run: | 
+        go version
+        ls 
+        ls 
