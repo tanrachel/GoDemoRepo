@@ -39,4 +39,7 @@ jobs:
         token: ${{ secrets.GO_REMOTE }}
     - name: Check files
       run: | 
-        ls 
+        ls
+        cd removeRepo
+        ls
+        cd .. 
