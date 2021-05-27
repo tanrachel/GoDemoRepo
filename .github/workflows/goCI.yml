@@ -13,3 +13,4 @@ jobs:
     - name: Print a greeting 
       run: | 
         echo Hello there!
+        ls
